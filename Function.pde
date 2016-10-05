@@ -39,13 +39,31 @@ public class Function {
     // end header
     
     // Start footer
+
+    // end footer
+  }
+  
+  /***********************************************************************************************/
+  
+  public void displayMainMenuFooter() {
     fill(255, 0, 255);
     textSize(15);
     text("Press 'Enter' to select", 328, 730);
     text("Move Cursor with Arrow UP/ DOWN", 270, 760);
     textSize(10);
+  }
+  
+  /***********************************************************************************************/
+  
+  public void displayCopyright() {
     fill(255,0 ,0);
     text("Copyright by Marc Mentha", 10, 790);
-    // end footer
+  }
+  
+  public void displayManualFooter() {
+    fill(255, 0, 255);
+    textSize(20);
+    text("Press 'Enter' = go back to Mainmenu", 225, 740);
+    textSize(12);
   }
 }

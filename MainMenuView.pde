@@ -6,6 +6,10 @@ public class MainMenuView extends Function implements View {
    * Class:      Mainmenu-Controller
    * Date:       02.10.2016
    */
+  
+  /***********************
+  * Define Variables
+  ***********************/
 
   private GameObject cursor = new GameObject();
   private ArrayList<String> menuPoints = new ArrayList<String>();
@@ -34,18 +38,18 @@ public class MainMenuView extends Function implements View {
 
     // Check if keyevents where triggeret
     if (enterPressed) {
-
-      enterPressed = false;
+    // Something where selected so we reset all globals and channge the View
+      this.game.resetGlobals();
       this.game.changeView(menuPoints.get(menuPointSelected));
     }
 
     if (downPressed) {
-
+      // Move cursor down and reset downPressed variable
       downPressed = false;
       menuPointSelected += 1;
       cursor.setPosition(cursor.position.x, cursor.position.y + 75); 
 
-      // Return to the start of the list
+      // Return to the start of the list when cursor reached the end
       if ( menuPointSelected > 4) {
         menuPointSelected = 0;
         cursor.setPosition(200, 275);
@@ -53,12 +57,12 @@ public class MainMenuView extends Function implements View {
     }
 
     if (upPressed) {
-
+      // Move cursor up and resets the upPressed variable
       upPressed = false;
       menuPointSelected -= 1;
       cursor.setPosition(cursor.position.x, cursor.position.y - 75); 
 
-      // Return to the end of the list
+      // Return to the end of the list when cursor reached the start
       if (menuPointSelected < 0) {
         menuPointSelected = 4;
         cursor.setPosition(200, 575);
@@ -72,6 +76,8 @@ public class MainMenuView extends Function implements View {
 
     background(0); // Clean the screen
     super.displayMenuHeader();
+    super.displayMainMenuFooter();
+    super.displayCopyright();
     cursor.display();
 
     // Display menupoints
@@ -90,22 +96,3 @@ public class MainMenuView extends Function implements View {
 }
 
   /***********************************************************************************************/
-
-  void keyReleased() {
-
-    if (keyCode == ENTER) {
-
-      enterPressed = true;
-    }
-
-    if ( key == CODED) {
-
-      if (keyCode == DOWN) {
-        downPressed = true;
-      }
-
-      if (keyCode == UP) {
-        upPressed = true;
-      }
-    }
-  }

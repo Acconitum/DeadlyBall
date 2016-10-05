@@ -7,7 +7,7 @@
 * Autor:          Marc Mentha
 * Version:        2.0.0
 * Date:           05.10.2016
-* Developed in:   Xubuntu 16.04
+* Developed in:   Xubuntu 16.04 in Porcessing 3.1.1
 * Developed for:  Debian based Linux, Windows, Mac
 * Sound:          Autor: poinl Title: Title-X
 * 

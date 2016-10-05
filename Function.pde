@@ -22,7 +22,7 @@ public class Function {
     fill(255, 255, 0);
     ellipse(330, 80, 35, 35); 
     
-    // Text
+    // Title
     fill (255, 0, 0);
     textSize(80);
     text("Deadly Ball", 190, 105);

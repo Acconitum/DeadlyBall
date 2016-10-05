@@ -2,7 +2,7 @@ public class ManualView extends Function implements View {
 
   /*
    * Autor:      Marc Mentha
-   * Class:      Every Gameobject extends from this Class/ Defaultcalss for Cursors
+   * Class:      ManualView-controller
    * Date:       05.10.2016
    */
 
@@ -20,7 +20,7 @@ public class ManualView extends Function implements View {
   public void handleEvents() {
     
     if (enterPressed) {
-      // Enter where pressed so we reset all globals and channge the View
+      // Enter was pressed so we reset all globals and change the View
       this.game.resetGlobals();
       this.game.changeView("Mainmenu");
     }

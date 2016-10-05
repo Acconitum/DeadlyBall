@@ -1,5 +1,3 @@
-private boolean enterPressed, upPressed, downPressed;
-
 public class MainMenuView extends Function implements View {
   /*
    * Autor:      Marc Mentha

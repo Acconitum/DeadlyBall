@@ -18,6 +18,7 @@ public class GameObject {
 /***********************************************************************************************/
 
   // Displays per default the Cursor
+  
   public void display() {
     fill(255, 255, 0);
     rect(this.position.x, position.y, 30, 10);
@@ -27,6 +28,7 @@ public class GameObject {
 /***********************************************************************************************/
   
   // Get the Position
+  
   public Position getPosition() {
     return this.position;
   }
@@ -34,6 +36,7 @@ public class GameObject {
 /***********************************************************************************************/
 
   // Set the Position
+  
   public void setPosition(float x, float y) {
     this.position.x = x;
     this.position.y = y;

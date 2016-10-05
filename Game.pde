@@ -1,3 +1,8 @@
+/*****************************
+* Define Global Variables
+***************************/
+public boolean enterPressed, upPressed, downPressed;
+
 public class Game {
 
   /*
@@ -79,6 +84,8 @@ public class Game {
 }
 
 /***********************************************************************************************/
+
+// Handle all Kayevents
 
 void keyReleased() {
 

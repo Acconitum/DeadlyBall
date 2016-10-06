@@ -7,7 +7,7 @@ public class Function {
   
   public void displayMenuHeader() {
     
-    // shows the header  and the footer of the menus
+    // shows the headers
     
     //Start header
     

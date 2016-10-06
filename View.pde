@@ -9,5 +9,4 @@ public interface View {
   public void initialize(Game game);
   public void handleEvents();
   public void display();
-  
 }

@@ -72,7 +72,7 @@ public class MainMenuView extends Function implements View {
 
   public void display() {
 
-    background(0); // Clean the screen
+    // Draw background
     super.displayMenuHeader();
     super.displayMainMenuFooter();
     super.displayCopyright();

@@ -35,9 +35,8 @@ public class Game {
 
   public void run() {
 
-    //this.actualView.handleEvents();
-    this.activeView.display();
     this.activeView.handleEvents();
+    this.activeView.display();
   }
 
   /***********************************************************************************************/
@@ -52,6 +51,11 @@ public class Game {
 
     switch ( changeToView ) {
 
+    case "Play":
+      this.activeView = new PlayView();
+      this.activeView.initialize(this);
+      break;
+      
     case "Mainmenu":
       this.activeView = new MainMenuView();
       this.activeView.initialize(this);

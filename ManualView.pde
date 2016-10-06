@@ -30,7 +30,7 @@ public class ManualView extends Function implements View {
 
   public void display() {
     
-    background(0); // Clear the screen
+    // draw background
     super.displayMenuHeader();
     super.displayManualFooter();
     super.displayCopyright();

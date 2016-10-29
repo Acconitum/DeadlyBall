@@ -9,10 +9,9 @@ public class ManualView extends Function implements View {
   /***********************
    * Define Variables
    ***********************/
-  private Game game;
 
-  public void initialize(Game game) {
-    this.game = game;
+  public void initialize() {
+
   }
 
   /***********************************************************************************************/
@@ -21,8 +20,8 @@ public class ManualView extends Function implements View {
     
     if (enterPressed) {
       // Enter was pressed so we reset all globals and change the View
-      this.game.resetGlobals();
-      this.game.changeView("Mainmenu");
+      game.resetGlobals();
+      game.changeView("Mainmenu");
     }
   }
 

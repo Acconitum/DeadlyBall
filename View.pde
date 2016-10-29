@@ -6,7 +6,7 @@ public interface View {
   * Date:       05.10.2016
   */  
   
-  public void initialize(Game game);
+  public void initialize();
   public void handleEvents();
   public void display();
 }

@@ -12,13 +12,11 @@ public class MainMenuView extends Function implements View {
   private GameObject cursor = new GameObject();
   private ArrayList<String> menuPoints = new ArrayList<String>();
   private int menuPointSelected = 0;
-  private Game game;
+
 
   /***********************************************************************************************/
 
-  public void initialize(Game game) {
-
-    this.game = game;
+  public void initialize() {
 
     cursor.setPosition(200, 275);
 
@@ -37,8 +35,8 @@ public class MainMenuView extends Function implements View {
     // Check if keyevents where triggeret
     if (enterPressed) {
     // Something where selected so we reset all globals and channge the View
-      this.game.resetGlobals();
-      this.game.changeView(menuPoints.get(menuPointSelected));
+      game.resetGlobals();
+      game.changeView(menuPoints.get(menuPointSelected));
     }
 
     if (downPressed) {

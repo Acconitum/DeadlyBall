@@ -9,15 +9,14 @@ public class PlayView implements View {
    * Define Variables
    ***********************/
    
-   private Game game;
    private int score;
    private Hero hero;
    
    /***********************************************************************************************/
    
-   public void initialize(Game game) {
+   public void initialize() {
      
-     this.game = game;
+
      this.score = 0;
      this.hero = new Hero();
    }
